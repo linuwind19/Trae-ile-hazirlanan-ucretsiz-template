@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCC - Projeler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #228B22;
+        }
+
+        .header {
+            background-color: #DAA520;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            background-color: #DAA520;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .nav-menu li {
+            margin-left: 30px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: 700;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 120px auto 50px;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .projects-section {
+            padding: 40px;
+            color: #333;
+            text-align: center;
+        }
+
+        .projects-section h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #228B22;
+        }
+
+        .projects-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .project-info {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .project-info h2 {
+            color: #228B22;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .project-info p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .project-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .project-details span {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer {
+            background: #DAA520;
+            color: black;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            padding: 0 15px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="./images/logo.png" alt="GCC Logo" style="height: 120px; width: auto;"></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="projeler.html">Projeler</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">Proje Görseli</div>
+                <div class="project-info">
+                    <h2>Modern Yaşam Kompleksi</h2>
+                    <p>Lüks konut projesi ile modern yaşam alanları oluşturuyoruz.</p>
+                    <div class="project-details">
+                        <span>Konum: İstanbul</span>
+                        <span>Alan: 25,000 m²</span>
+                        <span>Başlangıç: 2022</span>
+                        <span>Durum: Devam Ediyor</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">Proje Görseli</div>
+                <div class="project-info">
+                    <h2>Ticaret Merkezi</h2>
+                    <p>Modern iş merkezi projesi ile şehrin ticaret hayatına katkı sağlıyoruz.</p>
+                    <div class="project-details">
+                        <span>Konum: Ankara</span>
+                        <span>Alan: 15,000 m²</span>
+                        <span>Başlangıç: 2021</span>
+                        <span>Durum: Tamamlandı</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">Proje Görseli</div>
+                <div class="project-info">
+                    <h2>Endüstriyel Tesis</h2>
+                    <p>Yüksek teknolojili üretim tesisi projesi ile sanayiye destek oluyoruz.</p>
+                    <div class="project-details">
+                        <span>Konum: İzmir</span>
+                        <span>Alan: 40,000 m²</span>
+                        <span>Başlangıç: 2023</span>
+                        <span>Durum: Devam Ediyor</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">Proje Görseli</div>
+                <div class="project-info">
+                    <h2>Yeşil Bina Projesi</h2>
+                    <p>Sürdürülebilir ve çevre dostu yapı projesi ile geleceğe yatırım yapıyoruz.</p>
+                    <div class="project-details">
+                        <span>Konum: Bursa</span>
+                        <span>Alan: 20,000 m²</span>
+                        <span>Başlangıç: 2022</span>
+                        <span>Durum: Tamamlandı</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>İletişim</h4>
+                <p>Adres: İstanbul, Türkiye</p>
+                <p>Tel: +90 123 456 7890</p>
+                <p>E-mail: info@gcc.com.tr</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hizmetlerimiz</h4>
+                <p>İnşaat</p>
+                <p>Taahhüt</p>
+                <p>Danışmanlık</p>
+            </div>
+            <div class="footer-section">
+                <h4>Sosyal Medya</h4>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>LinkedIn</p>
+            </div>
+            <div class="footer-section">
+                <h4>Çalışma Saatleri</h4>
+                <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                <p>Cumartesi: 09:00 - 13:00</p>
+                <p>Pazar: Kapalı</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

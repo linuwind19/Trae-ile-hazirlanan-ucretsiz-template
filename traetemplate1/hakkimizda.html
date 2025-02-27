@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCC - Hakkımızda</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #228B22;
+        }
+
+        .header {
+            background-color: #DAA520;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            background-color: #DAA520;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .nav-menu li {
+            margin-left: 30px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: 700;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 120px auto 50px;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .about-section {
+            padding: 40px;
+            color: #333;
+            text-align: center;
+        }
+
+        .about-section h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #228B22;
+        }
+
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background: #DAA520;
+            color: black;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            padding: 0 15px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo"><img src="./images/logo.png" alt="GCC Logo" style="height: 120px; width: auto;"></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="projeler.html">Projeler</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="about-section">
+            <h1>Hakkımızda</h1>
+            <p>GCC olarak, 40 yılı aşkın süredir Türkiye'nin inşaat sektöründe lider konumda hizmet vermekteyiz. Kurulduğumuz günden bu yana, kaliteli iş anlayışımız ve müşteri memnuniyetini ön planda tutan yaklaşımımızla sektörde güvenilir bir marka haline geldik.</p>
+            <p>Deneyimli ekibimiz, modern teknolojiler ve yenilikçi çözümlerle, her projemizde en yüksek kalite standartlarını yakalamayı hedeflemekteyiz. Konut projelerinden ticari yapılara, endüstriyel tesislerden altyapı projelerine kadar geniş bir yelpazede hizmet sunmaktayız.</p>
+            <p>Sürdürülebilirlik ve çevre dostu yaklaşımları benimseyen şirketimiz, her projede çevresel etkileri minimize etmeye özen göstermektedir. Sosyal sorumluluk projelerimizle de topluma katkı sağlamaya devam ediyoruz.</p>
+            <p>Vizyonumuz: Türkiye'nin ve bölgenin önde gelen inşaat şirketlerinden biri olmak ve uluslararası standartlarda projeler geliştirmeye devam etmek.</p>
+            <p>Misyonumuz: Müşterilerimize en kaliteli hizmeti sunarak, yaşam kalitesini artıran, sürdürülebilir ve yenilikçi projeler üretmek.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>İletişim</h4>
+                <p>Adres: İstanbul, Türkiye</p>
+                <p>Tel: +90 123 456 7890</p>
+                <p>E-mail: info@gcc.com.tr</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hizmetlerimiz</h4>
+                <p>İnşaat</p>
+                <p>Taahhüt</p>
+                <p>Danışmanlık</p>
+            </div>
+            <div class="footer-section">
+                <h4>Sosyal Medya</h4>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>LinkedIn</p>
+            </div>
+            <div class="footer-section">
+                <h4>Çalışma Saatleri</h4>
+                <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                <p>Cumartesi: 09:00 - 13:00</p>
+                <p>Pazar: Kapalı</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
